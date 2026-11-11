@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>לימודי CNC – מכללת הדוגמה (דף תרגול)</title>
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --surface: #ffffff;
+    --text: #1d2330;
+    --muted: #4a5466;
+    --accent: #1f5fae;
+    --accent-dark: #174a88;
+    --border: #dde2ea;
+    --warn-bg: #b3261e;
+    --warn-text: #ffffff;
+    --ok-bg: #fff4d6;
+    --ok-border: #e0b84a;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  .practice-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--warn-bg);
+    color: var(--warn-text);
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 12px 16px;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+  section { padding: 40px 0; }
+  h1, h2, h3 { line-height: 1.3; margin: 0 0 12px; }
+  h1 { font-size: 1.9rem; }
+  h2 { font-size: 1.5rem; margin-bottom: 20px; }
+  h3 { font-size: 1.15rem; }
+  p { margin: 0 0 12px; }
+
+  .hero { background: var(--surface); border-bottom: 1px solid var(--border); text-align: center; }
+  .hero .place { color: var(--muted); font-weight: 600; margin-bottom: 8px; }
+  .hero .lead { color: var(--muted); font-size: 1.1rem; max-width: 560px; margin: 0 auto 24px; }
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    padding: 14px 28px;
+    font: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    min-height: 48px;
+  }
+  .btn:hover, .btn:focus-visible { background: var(--accent-dark); }
+  .btn:focus-visible, input:focus-visible, summary:focus-visible { outline: 3px solid #f2b705; outline-offset: 2px; }
+
+  .cards { display: grid; grid-template-columns: 1fr; gap: 16px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .card p { color: var(--muted); margin: 0; }
+  @media (min-width: 640px) {
+    .cards { grid-template-columns: 1fr 1fr; }
+    h1 { font-size: 2.3rem; }
+  }
+
+  details {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 12px;
+  }
+  summary { cursor: pointer; font-weight: 700; padding: 16px 20px; }
+  details p { padding: 0 20px 16px; color: var(--muted); margin: 0; }
+
+  form {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 480px;
+  }
+  label { display: block; font-weight: 600; margin-bottom: 6px; }
+  input {
+    width: 100%;
+    font: inherit;
+    padding: 12px;
+    border: 1px solid #b8c0cc;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    background: #fff;
+    color: var(--text);
+  }
+  input[type="tel"] { direction: rtl; }
+  form .btn { width: 100%; }
+  .form-note { color: var(--muted); font-size: 0.95rem; }
+  .status {
+    margin-top: 16px;
+    padding: 14px 16px;
+    border-radius: 8px;
+    background: var(--ok-bg);
+    border: 1px solid var(--ok-border);
+    font-weight: 700;
+  }
+  .status[hidden] { display: none; }
+  footer { text-align: center; color: var(--muted); font-size: 0.9rem; padding: 24px 16px 40px; }
+</style>
+</head>
+<body>
+
+<div class="practice-bar" role="note">דף תרגול – אין קורס פתוח לרישום</div>
+
+<header class="hero">
+  <div class="wrap">
+    <section>
+      <p class="place">מכללת הדוגמה · עיר הדוגמה</p>
+      <h1>לימודי CNC – מקצוע חדש בעולם הייצור</h1>
+      <p class="lead">מחפשים מקצוע חדש? כאן תוכלו להכיר את תחום ה-CNC ולהשאיר פרטים כדי לשמוע עוד.</p>
+      <a class="btn" href="#contact">להשארת פרטים</a>
+    </section>
+  </div>
+</header>
+
+<main>
+  <section id="benefits">
+    <div class="wrap">
+      <h2>למה ללמוד CNC?</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>מקצוע מעשי</h3>
+          <p>עבודה עם מכונות וחומרים אמיתיים, ותוצאה שאפשר לראות ולמשש.</p>
+        </article>
+        <article class="card">
+          <h3>שילוב של מחשב ועבודה בידיים</h3>
+          <p>מתכנתים את המכונה במחשב ומפעילים אותה בפועל.</p>
+        </article>
+        <article class="card">
+          <h3>מתאים גם למי שמתחיל מחדש</h3>
+          <p>אפשר להיכנס לתחום גם בלי רקע קודם בייצור או בתכנות.</p>
+        </article>
+        <article class="card">
+          <h3>ידע שאפשר להמשיך לפתח</h3>
+          <p>התחום רחב, ויש בו מקום ללמוד עוד ולהעמיק לאורך הזמן.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <h2>שאלות נפוצות</h2>
+      <details>
+        <summary>האם צריך ניסיון קודם?</summary>
+        <p>לא. לימודי CNC מתאימים גם למי שאין לו רקע בתחום ומחפש מקצוע חדש.</p>
+      </details>
+      <details>
+        <summary>מה לומדים בלימודי CNC?</summary>
+        <p>בדרך כלל לומדים קריאת שרטוטים, תכנות של מכונות CNC והפעלה שלהן בפועל.</p>
+      </details>
+      <details>
+        <summary>איפה מתקיימים הלימודים?</summary>
+        <p>במכללת הדוגמה, בעיר הדוגמה.</p>
+      </details>
+      <details>
+        <summary>מתי נפתח הקורס?</summary>
+        <p>זהו דף תרגול, ואין כרגע קורס פתוח לרישום.</p>
+      </details>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>השארת פרטים</h2>
+      <form id="lead-form" novalidate>
+        <label for="name">שם מלא</label>
+        <input id="name" name="name" type="text" autocomplete="off" required>
+
+        <label for="phone">טלפון</label>
+        <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="off" required>
+
+        <button class="btn" type="submit">שליחה</button>
+        <p class="form-note">שימו לב: זהו דף תרגול. הפרטים לא נשלחים לשום מקום.</p>
+        <div id="form-status" class="status" role="status" aria-live="polite" hidden></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>מכללת הדוגמה · עיר הדוגמה · דף תרגול בלבד</footer>
+
+<script>
+  (function () {
+    var form = document.getElementById('lead-form');
+    var status = document.getElementById('form-status');
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      form.reset();
+      status.textContent = 'זהו דף תרגול – הפרטים לא נשלחו ולא נשמרו';
+      status.hidden = false;
+    });
+  })();
+</script>
+</body>
+</html>
